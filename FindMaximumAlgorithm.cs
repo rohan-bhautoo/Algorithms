@@ -1,6 +1,6 @@
 using System;
 
-public class BubbleSortAlgorithm
+public class FindMaximumAlgorithm
 {
     public static void Main(string[] args)
     {
