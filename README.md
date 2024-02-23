@@ -38,6 +38,40 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     Code: [FindMaximumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMaximumAlgorithm.cs), [FindMinimumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMinimumAlgorithm.cs)
   
 - Compute the sum or average of array elements.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+    
+        - Given an array of integers, compute either the sum or the average of its elements.
+          
+    2. <h2>Input</h2>
+    
+        - An array of integers of length $N$.
+          
+    2. <h2>Output</h2>
+    
+        - Sum of the elements in the array.
+        - Average of the elements in the array.
+          
+    4. <h2>Algorithm</h2>
+    
+        1. The algorithm iterates through the array once, accumulating the sum of the elements. After iterating through the array, it can optionally compute the average by dividing the sum by the total number of elements.
+    
+    5. <h2>Time Complexity</h2>
+
+        - The algorithm iterates through the array once, making $N$ additions for computing the sum.
+        - Therefore, the time complexity for computing the sum is $O(N)$.
+        - If computing the average is required, it involves one division operation, which is constant time. So, the time complexity for computing the average remains $O(N)$.
+
+    6. <h2>Space Complexity</h2>
+
+        - The algorithm uses only a constant amount of additional space to store variables for sum and average computation.
+        - Therefore, the space complexity is $O(1)$.
+    
+    </details>
+
+    Code: [SumAverageAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/SumAverageAlgorithm.cs)
+  
 - Rotate an array to the left or right.
 - Searching arrays.
 - Sorting arrays.
