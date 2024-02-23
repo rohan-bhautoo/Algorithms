@@ -77,7 +77,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
                         -  In the second iteration of the outer loop, the inner loop performs N - 2 iterations.
                         -  In the third iteration of the outer loop, the inner loop performs N - 3 iterations.
                         -  ...
-                        -  In the (N - 1)th iteration of the outer loop, the inner loop performs 1 iteration.
+                        -  In the (N - 1)<sup>th</sup> iteration of the outer loop, the inner loop performs 1 iteration.
                     - Total Iterations of the Inner Loop:
                         - The total number of iterations performed by the inner loop can be calculated by summing the arithmetic sequence:
                           - $(N - 1) + (N - 2) + (N - 3) + ... + 1$
