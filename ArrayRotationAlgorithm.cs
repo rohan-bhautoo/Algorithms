@@ -11,8 +11,8 @@ public class ArrayRotationAlgorithm
         RotateLeft(arr1, rotations);
         Console.WriteLine("Array after left rotation: " + string.Join(", ", arr1));
 
-        int[] arr2 = { 1, 2, 3, 4, 5, 6, 7 };
         // Example of right rotation
+        int[] arr2 = { 1, 2, 3, 4, 5, 6, 7 };
         RotateRight(arr2, rotations);
         Console.WriteLine("Array after right rotation: " + string.Join(", ", arr2));
     }
