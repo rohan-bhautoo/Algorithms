@@ -4,7 +4,39 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
 
 ## Array Manipulation:
 
-- Find the maximum or minimum element in an array.
+- Find the maximum/minimum element in an array.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+    
+        - Given an array of integers, find and return the maximum/minimum element in the array.
+          
+    2. <h2>Input</h2>
+    
+        - An array of integers of length $N$.
+          
+    2. <h2>Output</h2>
+    
+        - The maximum/minimum element in the array.
+          
+    4. <h2>Algorithm</h2>
+    
+        1. The algorithm iterates through the array once, keeping track of the maximum/minimum element found so far.
+    
+    5. <h2>Time Complexity</h2>
+
+        - The algorithm iterates through the array once, making $N$ comparisons.
+        - Therefore, the time complexity is $O(N)$, where $N$ is the size of the input array.
+
+    6. <h2>Space Complexity</h2>
+
+        - The algorithm uses only a constant amount of additional space to store the maximum/minimum element found so far.
+        - Therefore, the space complexity is $O(1)$.
+    
+    </details>
+
+    Code: [FindMaximumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMaximumAlgorithm.cs), [FindMinimumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMinimumAlgorithm.cs)
+  
 - Compute the sum or average of array elements.
 - Rotate an array to the left or right.
 - Searching arrays.
@@ -17,7 +49,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
           
     2. <h2>Input</h2>
     
-        - An array of integers of length N.
+        - An array of integers of length $N$.
           
     2. <h2>Output</h2>
     
@@ -51,14 +83,14 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     5. <h2>Time Complexity</h2>
 
         - Outer Loop
-            - The outer loop iterates over the array length (N - 1) times, where N is the length of the array. This loop controls the number of passes needed to sort the array.
+            - The outer loop iterates over the array length $(N - 1)$ times, where $N$ is the length of the array. This loop controls the number of passes needed to sort the array.
 
               ```c#
               for(int i = 0; i < N - 1; i++)
               ```
 
         - Inner Loop
-            - The inner loop also iterates over the array length, but it decreaess by one in each subsequent pass (N - 1 - i), where i is the index of the outer loop. This loop performs comparisons and potential swaps.
+            - The inner loop also iterates over the array length, but it decreaess by one in each subsequent pass $(N - 1 - i)$, where i is the index of the outer loop. This loop performs comparisons and potential swaps.
          
               ```c#
               for(int j = 0; j < N - 1 - i; j++)
@@ -67,30 +99,30 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
         - Time Complexity Calculation
             - To analyze the time complexity, we need to consider the number of comparisons and swaps performed by the algorithm.
          
-                - Comparisons: In each pass of the outer loop, the inner loop performs N - 1 comparisons. Since the outer loop iterate N - 1 times, the total number of comparisons is roughly $(N - 1) * (N - 1) = N^2 - 2N + 1$ comparisons.
+                - Comparisons: In each pass of the outer loop, the inner loop performs $N - 1$ comparisons. Since the outer loop iterate $N - 1$ times, the total number of comparisons is roughly $(N - 1) * (N - 1) = N^2 - 2N + 1$ comparisons.
                 - Swaps: The number of swaps can vary based on the initial ordering of the array.
                     - Worst-Case Scenario: The array is in reverse order. Bubble Sort performs a swap for almost every comparison.
                     - Best-Case Scenario: If the array is already sorted, no swaps are needed.
                 - Total Time Complexity:
                     - Inner Loop Iterations:
-                        -  In the first iteration of the outer loop, the inner loop performs N - 1 iterations.
-                        -  In the second iteration of the outer loop, the inner loop performs N - 2 iterations.
-                        -  In the third iteration of the outer loop, the inner loop performs N - 3 iterations.
+                        -  In the first iteration of the outer loop, the inner loop performs $N - 1$ iterations.
+                        -  In the second iteration of the outer loop, the inner loop performs $N - 2$ iterations.
+                        -  In the third iteration of the outer loop, the inner loop performs $N - 3$ iterations.
                         -  ...
-                        -  In the (N - 1)<sup>th</sup> iteration of the outer loop, the inner loop performs 1 iteration.
+                        -  In the $(N - 1)$<sup>th</sup> iteration of the outer loop, the inner loop performs 1 iteration.
                     - Total Iterations of the Inner Loop:
                         - The total number of iterations performed by the inner loop can be calculated by summing the arithmetic sequence:
                           - $(N - 1) + (N - 2) + (N - 3) + ... + 1$
                           - This sequence can be represented as a triangular number and the sum of the first N natural numbers can be calculated using the formula:
                             $$\sum_{i=1}^N i = \frac{N(N+1)}{2}$$
-                          - So, when substituting N - 1 for N in the formula (because we're summing from 1 to N -1), the total number of iterations of the inner loop is:
+                          - So, when substituting $N - 1$ for $N$ in the formula (because we're summing from 1 to N -1), the total number of iterations of the inner loop is:
                             $$\sum_{i=1}^{N-1} i = \frac{(N-1)((N-1)+1)}{2} = \frac{N^2-N}{2} = \frac{N(N-1)}{2}$$
                     - Total Comparisons:
                         - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
                     - Time Complexity:
                         - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
                     - Time Complexity:
-                        - The complexity is $\frac{N^2-N}{2}$, therefore $O(N^2)$ (in Big O notation, we discard the lower-order terms and constant factors like $-\frac{N}{2}$, because the number of comparisons scales quadratically with the size of the input array N.
+                        - The complexity is $\frac{N^2-N}{2}$, therefore $O(N^2)$ (in Big O notation, we discard the lower-order terms and constant factors like $-\frac{N}{2}$, because the number of comparisons scales quadratically with the size of the input array $N$.
 
     6. <h2>Space Complexity</h2>
 
@@ -122,7 +154,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
 
-    Code: [BubbleSortAlgorithm](https://github.com/rohan-bhautoo/Algorithms/blob/main/BubbleSortAlgorithm.cs)
+    Code: [BubbleSortAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/BubbleSortAlgorithm.cs)
 
 ## String Manipulation:
 
