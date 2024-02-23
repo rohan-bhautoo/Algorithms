@@ -7,7 +7,32 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
 - Find the maximum or minimum element in an array.
 - Compute the sum or average of array elements.
 - Rotate an array to the left or right.
-- Implement algorithms for searching and sorting arrays.
+- Searching arrays.
+- Sorting arrays.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+        Given an unsorted array, sort the array in ascending order.
+    2. <h3>Input</h3>
+        An array of integers of length N.
+    3. <h3>Output</h3>
+        The sorted array.
+    4. <h3>Algorithm</h3>
+    
+        1. Start iterating through the array from the beginning.
+        2. For each element, compare it with the next element.
+        3. If the current element is greater that the next element, swap them.
+        4. Continue this process until the entire array is sorted.
+    
+    5. <h3>Time Complexity</h3>
+
+    6. <h3>Space Complexity</h3>
+
+    7. <h3>Optimizations</h3>
+    
+    </details>
+
+    Code: [BubbleSortAlgorithm](../main/BubbleSortAlgorithm.cs)
 
 ## String Manipulation:
 
