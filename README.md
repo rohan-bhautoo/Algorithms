@@ -83,22 +83,46 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
                           - $(N - 1) + (N - 2) + (N - 3) + ... + 1$
                           - This sequence can be represented as a triangular number and the sum of the first N natural numbers can be calculated using the formula:
                             $$\sum_{i=1}^N i = \frac{N(N+1)}{2}$$
-                          - So, the total number of iterations of the inner loop is:
-                            $$\frac{N(N+1)}{2}$$
+                          - So, when substituting N - 1 for N in the formula (because we're summing from 1 to N -1), the total number of iterations of the inner loop is:
+                            $$\sum_{i=1}^{N-1} i = \frac{(N-1)((N-1)+1)}{2} = \frac{N^2-N}{2} = \frac{N(N-1)}{2}$$
                     - Total Comparisons:
-                          - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
+                        - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
                     - Time Complexity:
-                          - As each comparison  
-                    - Considering the worst-case scenario, where Bubble Sort performs roughly $N^2$ comparisons and potentially the same number of swaps, the time complexity is $O(N^2)$.
-                
+                        - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
+                    - Time Complexity:
+                        - The complexity is $\frac{N^2-N}{2}$, therefore $O(N^2)$ (in Big O notation, we discard the lower-order terms and constant factors like $-\frac{N}{2}$, because the number of comparisons scales quadratically with the size of the input array N.
 
     6. <h2>Space Complexity</h2>
 
+        - Bubble Sort is an in-place sorting algorithm, meaning it doesn't require additional space other that the input array itself. Therefore, its space complexity is $O(1)$.
+
     7. <h2>Optimizations</h2>
+
+        - A flag can be introduced to check if any swaps were made in a pass. If no swaps were made, it indicates that the array is already sorted and you can terminate early.
+
+            ```c#
+            public static void BubbleSort(int[] arr) {
+              int n = arr.Length;
+              for (int i = 0; i < n - 1; i++) {
+                  bool swapped = false;
+                  for (int j = 0; j < n - 1 - i; j++) {
+                      if (arr[j] > arr[j + 1]) {
+                          int temp = arr[j];
+                          arr[j] = arr[j + 1];
+                          arr[j + 1] = temp;
+                          swapped = true;
+                      }
+                  }
+                  // If no two elements were swapped in the inner loop, then the array is already sorted
+                  if (!swapped)
+                      break;
+                }
+            }
+            ```
     
     </details>
 
-    Code: [BubbleSortAlgorithm](../BubbleSortAlgorithm.cs)
+    Code: [BubbleSortAlgorithm](https://github.com/rohan-bhautoo/Algorithms/blob/main/BubbleSortAlgorithm.cs)
 
 ## String Manipulation:
 
