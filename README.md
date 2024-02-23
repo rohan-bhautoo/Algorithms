@@ -30,9 +30,50 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
         2. If the current element is greater that the next element, swap them.
         4. Continue this process until the entire array is sorted.
       
-        ![image](https://github.com/rohan-bhautoo/Algorithms/assets/47154593/a4b0053a-bedd-4099-85e3-f17371a0b3ca)
+            ```
+            Lets break it down:
+    
+            First pass:
+            (5, 3, 4, 1, 2) → (3, 5, 4, 1, 2)
+            (3, 5, 4, 1, 2) → (3, 4, 5, 1, 2)
+            (3, 4, 5, 1, 2) → (3, 4, 1, 5, 2)
+            (3, 4, 1, 5, 2) → (3, 4, 1, 2, 5)
+            
+            Second pass:
+            (3, 4, 1, 2, 5) → (3, 4, 1, 2, 5)
+            (3, 4, 1, 2, 5) → (3, 1, 4, 2, 5)
+            (3, 1, 4, 2, 5) → (3, 1, 2, 4, 5)
+            
+            Continued passes render the list completely sorted:
+            (1, 2, 3, 4, 5)
+            ```
     
     5. <h2>Time Complexity</h2>
+
+        - Outer Loop
+            - The outer loop iterates over the array length (N - 1) times, where N is the length of the array. This loop controls the number of passes needed to sort the array.
+
+              ```c#
+              for(int i = 0; i < N - 1; i++)
+              ```
+
+        - Inner Loop
+            - The inner loop also iterates over the array length, but it decreaess by one in each subsequent pass (N - 1 - i), where i is the index of the outer loop. This loop performs comparisons and potential swaps.
+         
+              ```c#
+              for(int j = 0; j < N - 1 - i; j++)
+              ```
+              
+        - Time Complexity Calculation
+            - To analyze the time complexity, we need to consider the number of comparisons and swaps performed by the algorithm.
+         
+                - Comparisons: In each pass of the outer loop, the inner loop performs N - 1 comparisons. Since the outer loop iterate N - 1 times, the total number of comparisons is roughly $(N - 1) * (N - 1) = N^2 - 2N + 1$ comparisons.
+                - Swaps: The number of swaps can vary based on the initial ordering of the array.
+                    - Worst-Case Scenario: The array is in reverse order. Bubble Sort performs a swap for almost every comparison.
+                    - Best-Case Scenario: If the array is already sorted, no swaps are needed.
+                - Total Time Complexity:
+                    - Considering the worst-case scenario, where Bubble Sort performs roughly $N^2 comparisons and potentially the same number of swaps, the time complexity is $O(N^2).
+                
 
     6. <h2>Space Complexity</h2>
 
