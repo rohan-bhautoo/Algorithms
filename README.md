@@ -72,7 +72,24 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
                     - Worst-Case Scenario: The array is in reverse order. Bubble Sort performs a swap for almost every comparison.
                     - Best-Case Scenario: If the array is already sorted, no swaps are needed.
                 - Total Time Complexity:
-                    - Considering the worst-case scenario, where Bubble Sort performs roughly $N^2 comparisons and potentially the same number of swaps, the time complexity is $O(N^2).
+                    - Inner Loop Iterations:
+                        -  In the first iteration of the outer loop, the inner loop performs N - 1 iterations.
+                        -  In the second iteration of the outer loop, the inner loop performs N - 2 iterations.
+                        -  In the third iteration of the outer loop, the inner loop performs N - 3 iterations.
+                        -  ...
+                        -  In the (N - 1)th iteration of the outer loop, the inner loop performs 1 iteration.
+                    - Total Iterations of the Inner Loop:
+                        - The total number of iterations performed by the inner loop can be calculated by summing the arithmetic sequence:
+                          - $(N - 1) + (N - 2) + (N - 3) + ... + 1$
+                          - This sequence can be represented as a triangular number and the sum of the first N natural numbers can be calculated using the formula:
+                            $$\sum_{i=1}^N i = \frac{N(N+1)}{2}$$
+                          - So, the total number of iterations of the inner loop is:
+                            $$\frac{N(N+1)}{2}$$
+                    - Total Comparisons:
+                          - Since each iteration of the inner loop performs a comparison, the total number of comparisons is equal to the total iterations of the inner loop.
+                    - Time Complexity:
+                          - As each comparison  
+                    - Considering the worst-case scenario, where Bubble Sort performs roughly $N^2$ comparisons and potentially the same number of swaps, the time complexity is $O(N^2)$.
                 
 
     6. <h2>Space Complexity</h2>
