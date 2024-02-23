@@ -98,7 +98,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
 
-    Code: [BubbleSortAlgorithm](../main/BubbleSortAlgorithm.cs)
+    Code: [BubbleSortAlgorithm](../BubbleSortAlgorithm.cs)
 
 ## String Manipulation:
 
