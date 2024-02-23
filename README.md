@@ -12,23 +12,31 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
   <details><summary><b>Analysis</b></summary>
     
     1. <h2>Problem Statement</h2>
-        Given an unsorted array, sort the array in ascending order.
-    2. <h3>Input</h3>
-        An array of integers of length N.
-    3. <h3>Output</h3>
-        The sorted array.
-    4. <h3>Algorithm</h3>
+    
+        - Given an unsorted array, sort the array in ascending order.
+          
+    2. <h2>Input</h2>
+    
+        - An array of integers of length N.
+          
+    2. <h2>Output</h2>
+    
+        - The sorted array.
+          
+    4. <h2>Algorithm</h2>
     
         1. Start iterating through the array from the beginning.
         2. For each element, compare it with the next element.
-        3. If the current element is greater that the next element, swap them.
+        2. If the current element is greater that the next element, swap them.
         4. Continue this process until the entire array is sorted.
+      
+        ![image](https://github.com/rohan-bhautoo/Algorithms/assets/47154593/a4b0053a-bedd-4099-85e3-f17371a0b3ca)
     
-    5. <h3>Time Complexity</h3>
+    5. <h2>Time Complexity</h2>
 
-    6. <h3>Space Complexity</h3>
+    6. <h2>Space Complexity</h2>
 
-    7. <h3>Optimizations</h3>
+    7. <h2>Optimizations</h2>
     
     </details>
 
