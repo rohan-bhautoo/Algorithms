@@ -35,7 +35,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
 
-    Code: [FindMaximumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMaximumAlgorithm.cs), [FindMinimumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/FindMinimumAlgorithm.cs)
+    Code: [FindMaximumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/FindMaximumAlgorithm.cs), [FindMinimumAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/FindMinimumAlgorithm.cs)
   
 - Compute the sum or average of array elements.
   <details><summary><b>Analysis</b></summary>
@@ -70,7 +70,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
 
-    Code: [SumAverageAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/SumAverageAlgorithm.cs)
+    Code: [SumAverageAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/SumAverageAlgorithm.cs)
   
 - Rotate an array to the left or right.
   <details><summary><b>Analysis</b></summary>
@@ -126,7 +126,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
   
-    Code: [ArrayRotationAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/ArrayRotationAlgorithm.cs)
+    Code: [ArrayRotationAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/ArrayRotationAlgorithm.cs)
   
 - Searching arrays.
     - Linear Search Algorithm
@@ -161,7 +161,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
         </details>
     
-        Code: [LinearSearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/LinearSearchAlgorithm.cs)
+        Code: [LinearSearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/LinearSearchAlgorithm.cs)
  
     - Binary Search Algorithm
       <details><summary><b>Analysis</b></summary>
@@ -210,7 +210,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
         
         </details>
     
-        Code: [BinarySearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/BinarySearchAlgorithm.cs)
+        Code: [BinarySearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/BinarySearchAlgorithm.cs)
       
 - Sorting arrays.
   <details><summary><b>Analysis</b></summary>
@@ -326,7 +326,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     </details>
 
-    Code: [BubbleSortAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/BubbleSortAlgorithm.cs)
+    Code: [BubbleSortAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/BubbleSortAlgorithm.cs)
 
 ## String Manipulation:
 
