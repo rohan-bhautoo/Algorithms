@@ -77,41 +77,56 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - The goal is to rotate an array to the left or right by a specified number of positions.
           
     2. <h2>Input</h2>
     
-        - 
+        - An array of integers of length $N$.
+        - The number of positions to rotate the array.
           
     2. <h2>Output</h2>
     
-        - 
+        - The array after performing the rotation.
           
     4. <h2>Algorithm</h2>
     
-        1. 
+        1. For left rotation:
+            - Take the first `d` elements and move them to the end of the array.
+        2. For right rotation:
+            - Take the last `d` elements and move them to the beginning of the array.
       
               ```
               Lets break it down:
   
+              Number of left rotation: 3
+  
+              First rotation:
+              (1, 2, 3, 4, 5, 6, 7) → (2, 3, 4, 5, 6, 7, 1)
+  
+              Second rotation:
+              (2, 3, 4, 5, 6, 7, 1) → (3, 4, 5, 6, 7, 1, 2)
+  
+              Third rotation:
+              (3, 4, 5, 6, 7, 1, 2) → (4, 5, 6, 7, 1, 2, 3)
       
               ```
     
     5. <h2>Time Complexity</h2>
-
-        - 
-
+  
+        - The time complexity for both left and right rotations is $O(N)$, where $N$ is the number of integers in the array. This is because in both cases, we need to move a certain number of integers, and the time complexity is linearly proportional to the number of integers moved.
+  
     6. <h2>Space Complexity</h2>
-
-        - 
-
+  
+        - The space complexity of the rotation algorithm is $O(1)$ because it doesn't use any additional space that scales with the size of the input. The rotations are performed in-place.
+  
     7. <h2>Optimizations</h2>
-
-        - 
+  
+        - If the number of positions to rotate $(d)$ is greater than the size of the array $(N)$, the modulus operation $(d mod N)$ can be used to find the effective number of positions to rotate, as rotating by $N$ positions is equivalent to not rotating at all.
+        - The rotation algorithm can be optimized by reversing the entire array and then reversing the first and last portions separately. This approach will simplify the logic and can be more efficient.
     
     </details>
-
-    Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/ArrayRotationAlgorithm.cs)
+  
+    Code: [ArrayRotationAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/ArrayRotationAlgorithm.cs)
   
 - Searching arrays.
     - Linear Search Algorithm
@@ -153,63 +168,48 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
         
         </details>
     
-        Code: [ArrayRotationAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/ArrayRotationAlgorithm.cs)
+        Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/.cs)
  
     - Binary Search Algorithm
       <details><summary><b>Analysis</b></summary>
     
         1. <h2>Problem Statement</h2>
         
-            - The goal is to rotate an array to the left or right by a specified number of positions.
+            - 
               
         2. <h2>Input</h2>
         
-            - An array of integers of length $N$.
-            - The number of positions to rotate the array.
+            - 
               
         2. <h2>Output</h2>
         
-            - The array after performing the rotation.
+            - 
               
         4. <h2>Algorithm</h2>
         
-            1. For left rotation:
-                - Take the first `d` elements and move them to the end of the array.
-            2. For right rotation:
-                - Take the last `d` elements and move them to the beginning of the array.
+            1. 
           
                   ```
                   Lets break it down:
       
-                  Number of left rotation: 3
-      
-                  First rotation:
-                  (1, 2, 3, 4, 5, 6, 7) → (2, 3, 4, 5, 6, 7, 1)
-      
-                  Second rotation:
-                  (2, 3, 4, 5, 6, 7, 1) → (3, 4, 5, 6, 7, 1, 2)
-      
-                  Third rotation:
-                  (3, 4, 5, 6, 7, 1, 2) → (4, 5, 6, 7, 1, 2, 3)
           
                   ```
         
         5. <h2>Time Complexity</h2>
     
-            - The time complexity for both left and right rotations is $O(N)$, where $N$ is the number of integers in the array. This is because in both cases, we need to move a certain number of integers, and the time complexity is linearly proportional to the number of integers moved.
+            - 
     
         6. <h2>Space Complexity</h2>
     
-            - The space complexity of the rotation algorithm is $O(1)$ because it doesn't use any additional space that scales with the size of the input. The rotations are performed in-place.
+            - 
     
         7. <h2>Optimizations</h2>
     
-            - If the number of positions to rotate $(d)$ is greater than the size of the array $(N)$, the modulus operation $(d mod N)$ can be used to find the effective number of positions to rotate, as rotating by $N$ positions is equivalent to not rotating at all.
-            - The rotation algorithm can be optimized by reversing the entire array and then reversing the first and last portions separately. This approach will simplify the logic and can be more efficient.
+            - 
         
         </details>
     
-        Code: [ArrayRotationAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/ArrayRotationAlgorithm.cs)
+        Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/.cs)
       
 - Sorting arrays.
   <details><summary><b>Analysis</b></summary>
