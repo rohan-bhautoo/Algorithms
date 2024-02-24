@@ -134,41 +134,34 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
         1. <h2>Problem Statement</h2>
         
-            - 
+            - Given an array of elements and a target value, determine if the target value is present in the array.
               
         2. <h2>Input</h2>
         
-            - 
+            - An array of integers of length $N$.
+            - The target value to search for.
               
         2. <h2>Output</h2>
         
-            - 
+            - Index of the target value if found, otherwise -1.
               
         4. <h2>Algorithm</h2>
         
-            1. 
-          
-                  ```
-                  Lets break it down:
-      
-          
-                  ```
+            1. Iterate through the array sequentially and compare each element with the target value until a match is found or the end of the array is reached.
         
         5. <h2>Time Complexity</h2>
     
-            - 
+            - In the worst-case scenario, the target value may be the last element of the array or not present at all, requiring $N$ comparisons.
+            - Therefore, the time complexity for linear search is $O(N)$.
     
         6. <h2>Space Complexity</h2>
     
-            - 
+            - Linear search uses only a constant amount of additional space.
+            - Therefore, the space complexity is $O(1)$.
     
-        7. <h2>Optimizations</h2>
-    
-            - 
-        
         </details>
     
-        Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/.cs)
+        Code: [LinearSearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/LinearSearchAlgorithm.cs)
  
     - Binary Search Algorithm
       <details><summary><b>Analysis</b></summary>
