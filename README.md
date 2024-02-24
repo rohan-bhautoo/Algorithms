@@ -168,41 +168,49 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
         1. <h2>Problem Statement</h2>
         
-            - 
+            - Given a sorted array of elements and a target value, determine if the target value is present in the array.
               
         2. <h2>Input</h2>
         
-            - 
+            - A sorted integer array of length $N$.
+            - A target value to search for.
               
         2. <h2>Output</h2>
         
-            - 
+            - Index of the target value if found, otherwise -1.
               
         4. <h2>Algorithm</h2>
         
-            1. 
-          
-                  ```
-                  Lets break it down:
-      
-          
-                  ```
+            1. Compare the target value with the middle element of the array.
+            2. If the target value matches the middle element, return its index.
+            3. If the target value is less than the middle element, repeat the search process on the left half of the array.
+            4. If the target value is greater than the middle element, repeat the search process on the right half of the array.
+            5. Continue this process until the target value is found or the search space is empty.
         
         5. <h2>Time Complexity</h2>
     
-            - 
+            - Initial Step:
+                - In each step of the binary search, the search space is halved.
+            - Iterations Analysis:
+                - In the first step, there is $N$ elements.
+                - After the first comparison, approxiamtely $\frac{N}{2}$ elements are remaining.
+                - After the second comparison, approxiamtely $\frac{N}{4}$ elements are remaining.
+                - After the third comparison, approxiamtely $\frac{N}{8}$ elements are remaining.
+                - ...
+                - This halving process continues until we find the target element or exhaust the search space.
+            - Time Complexity:
+                -  The time complexity of binary search is determined by the number of comparisons required, which is approximately $log{_2}(N)$.
+                -  Therefore, the time complexity is $O(log N)$.
+                -  The number of comparisons scales logarithmically with the size of the input array $N$. This means that as the size of the array increases, the number of comparisons needed increases at a much slower rate.
     
         6. <h2>Space Complexity</h2>
     
-            - 
-    
-        7. <h2>Optimizations</h2>
-    
-            - 
+            - Binary search typically uses recursion, which consumes additional space proportional to the depth of the recursion stack.
+            - Therefore, the space complexity is $O(log N)$ due to the recursive calls.
         
         </details>
     
-        Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/.cs)
+        Code: [BinarySearchAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/BinarySearchAlgorithm.cs)
       
 - Sorting arrays.
   <details><summary><b>Analysis</b></summary>
