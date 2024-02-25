@@ -331,6 +331,45 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
 ## String Manipulation:
 
 - Reverse a string or a sentence.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+    
+        - 
+          
+    2. <h2>Input</h2>
+    
+        - 
+          
+    2. <h2>Output</h2>
+    
+        - 
+          
+    4. <h2>Algorithm</h2>
+    
+        1. 
+      
+            ```
+            Lets break it down:
+    
+            ```
+    
+    5. <h2>Time Complexity</h2>
+
+        - 
+
+    6. <h2>Space Complexity</h2>
+
+        - 
+
+    7. <h2>Optimizations</h2>
+
+        - 
+    
+    </details>
+
+    Code: [StringReversalAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/String%20Manipulation/StringReversalAlgorithm.cs)
+  
 - Check if a string is a palindrome.
 - Find the first non-repeated character in a string.
 - Implement string matching algorithms.
