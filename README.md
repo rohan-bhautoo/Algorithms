@@ -335,36 +335,72 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - The goal is to reverse the characters in a string or the words in a sentence.
           
     2. <h2>Input</h2>
     
-        - 
+        - A string or sentence.
           
     2. <h2>Output</h2>
     
-        - 
+        - The reversed string or sentence.
           
     4. <h2>Algorithm</h2>
     
-        1. 
+        1. Reverse String:
+             - Start from both ends of the string.
+             - Swap the characters at the two ends and move towards the center until the entire string is reversed.
       
-            ```
-            Lets break it down:
-    
-            ```
+                ```
+                Lets break it down:
+
+                string = "Hello"
+
+                First Iteration:
+                ('H','e','l','l','o') → ('o','e','l','l','H')
+
+                Second Iteration:
+                ('o','e','l','l','H') → ('o','l','l','e','H')
+
+                final string = 'olleH'
+        
+                ```
+                
+        2. Reverse Sentence (Words):
+             - Split the sentence into individual words.
+             - Reverse the order of the words.
+             - Join the reversed words to form the reversed sentence.
+      
+                ```
+                Lets break it down:
+
+                string = "This is a sentence."
+
+                // Convert to Char array:
+                ['T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 's', 'e', 'n', 't', 'e', 'n', 'c', 'e', '.']
+
+                // Reverse the Entire Sentence:
+                ['.', 'e', 'c', 'n', 'e', 't', 'n', 'e', 's', ' ', 'a', ' ', 's', 'i', ' ', 's', 'i', 'h', 'T']
+
+                // Words are split using ' ' and then reversed
+                ['s', 'e', 'n', 't', 'e', 'n', 'c', 'e', '.', ' ', 'a', ' ', 'i', 's', ' ', 'T', 'h', 'i', 's']
+
+                final string = 'sentence. sample a is This'
+        
+                ```
     
     5. <h2>Time Complexity</h2>
 
-        - 
+          - For reversing a string, the time complexity is $O(N)$, where $N$ is the length of the string. This is because each character is visited once during the reversal process.
+          - For reversing a sentence (words), the time complexity is also $O(N)$, where $N$ is the total number of characters in the sentence.
 
     6. <h2>Space Complexity</h2>
 
-        - 
+        - The space complexity for both cases is $O(1)$ since the reversal is performed in-place, and no additional space is required proportional to the size of the input.
 
     7. <h2>Optimizations</h2>
 
-        - 
+        - For reversing a sentence, the process can be optimized by reversing the entire string first and then reversing the individual words. This reduces the number of character swaps needed.
     
     </details>
 
