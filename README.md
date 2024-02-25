@@ -372,6 +372,7 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
   
 - Check if a string is a palindrome.
 - Find the first non-repeated character in a string.
+- Find the most repeated character in a string.
 - Implement string matching algorithms.
 
 ## Linked Lists:
