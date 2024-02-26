@@ -424,7 +424,6 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
         1. Iterate through the characters of the string from both ends simultaneously.
         2. Compare the characters at corresponding positions.
         3. If all pairs of corresponding characters match, the string is a palindrome.
-             - 
       
                 ```
                 Lets break it down:
