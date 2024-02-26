@@ -363,7 +363,6 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
                 ('o','e','l','l','H') → ('o','l','l','e','H')
 
                 final string = 'olleH'
-        
                 ```
                 
         2. Reverse Sentence (Words):
@@ -386,7 +385,6 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
                 ['s', 'e', 'n', 't', 'e', 'n', 'c', 'e', '.', ' ', 'a', ' ', 'i', 's', ' ', 'T', 'h', 'i', 's']
 
                 final string = 'sentence. sample a is This'
-        
                 ```
     
     5. <h2>Time Complexity</h2>
@@ -411,38 +409,58 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - The goal is to determine whether a given string is a palindrome. A palindrome is a string that reads the same forward as backward.
           
     2. <h2>Input</h2>
     
-        - 
+        - A string.
           
     2. <h2>Output</h2>
     
-        - 
+        - Returns true if the string is a palindrome. Otherwise, it will return false.
           
     4. <h2>Algorithm</h2>
     
-        1. Reverse String:
+        1. Iterate through the characters of the string from both ends simultaneously.
+        2. Compare the characters at corresponding positions.
+        3. If all pairs of corresponding characters match, the string is a palindrome.
              - 
       
                 ```
                 Lets break it down:
 
-        
+                string input = "A man, a plan, a canal, Panama!";
+
+                // String converted to lowercase
+                input = "a man, a plan, a canal, panama!";
+
+                // Non-alphanumeric characters are skipped
+                input = "amanaplanacanalpanama";
+
+                // Two pointers are used, one at the beginning and one at the end of the processed string:
+                'start' initially points to the first character ('a').
+                'end' initially points to the last character ('a').
+
+                //Iteration:
+                Characters at the corresponding positions are compared:
+                'a' (start) == 'a' (end) → Move pointers.
+                'm' (start) == 'm' (end) → Move pointers.
+                'a' (start) == 'a' (end) → Move pointers.
+
+                // The algorithm continues comparing characters until the pointers meet in the middle.
                 ```
     
     5. <h2>Time Complexity</h2>
 
-          - 
+          - The time complexity is $O(N)$, where $N$ is the length of the string. This is because we need to iterate through half of the string to check for palindrome property.
 
     6. <h2>Space Complexity</h2>
 
-        - 
+        - The space complexity is $O(1)$ since no additional space is used that scales with the size of the input.
 
     7. <h2>Optimizations</h2>
 
-        - 
+        - The algorithm can be optimized by ignoring non-alphanumeric characters and treating uppercase and lowercase letters as equal.
     
     </details>
 
