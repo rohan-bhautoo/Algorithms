@@ -1,4 +1,4 @@
-## Array Manipulation:
+## Array Manipulation
 
 - Find the maximum/minimum element in an array.
   <details><summary><b>Analysis</b></summary>
