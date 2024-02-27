@@ -498,6 +498,36 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     Code: [FirstNonRepeatedCharAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/String%20Manipulation/FirstNonRepeatedCharAlgorithm.cs)
   
 - Find the most repeated character in a string.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+    
+        - 
+          
+    2. <h2>Input</h2>
+    
+        - 
+          
+    2. <h2>Output</h2>
+    
+        - 
+          
+    4. <h2>Algorithm</h2>
+    
+        1. 
+      
+    5. <h2>Time Complexity</h2>
+
+          - 
+            
+    6. <h2>Space Complexity</h2>
+
+        - 
+    
+    </details>
+
+    Code: [RepeatedCharAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/String%20Manipulation/RepeatedCharAlgorithm.cs)
+  
 - Implement string matching algorithms.
 
 ## Linked Lists:
