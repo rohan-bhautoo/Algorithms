@@ -21,19 +21,13 @@ public class FirstNonRepeatedCharAlgorithm
     public static char? FindFirstNonRepeatedCharacter(string input)
     {
         Dictionary<char, int> charCount = new Dictionary<char, int>();
-        HashSet<char> repeatedChars = new HashSet<char>();
         
         foreach(char c in input)
         {
-            // If the character is already repeated, skip it
-            if(repeatedChars.Contains(c))
-                continue;
-                
             // Update the count of each character
             if(charCount.ContainsKey(c))
             {
                 charCount[c]++;
-                repeatedChars.Add(c);
             }
             else
             {
@@ -44,7 +38,7 @@ public class FirstNonRepeatedCharAlgorithm
         // Find the first non-repeated character
         foreach(char c in input)
         {
-            if(!repeatedChars.Contains(c))
+            if (charCount[c] == 1)
                 return c;
         }
         
