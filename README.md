@@ -502,27 +502,28 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - The goal is to find the character that appears most frequently in a given string.
           
     2. <h2>Input</h2>
     
-        - 
+        - A string.
           
     2. <h2>Output</h2>
     
-        - 
+        - The character that appears most frequently.
           
     4. <h2>Algorithm</h2>
     
-        1. 
+        1. Iterate through the string and count the occurrences of each character using an array of counts.
+        2. Find the character with the highest count.
       
     5. <h2>Time Complexity</h2>
 
-          - 
+          - The time complexity is $O(N)$, where $N$ is the length of the input string. This is because the string is iterated once to count the occurrences.
             
     6. <h2>Space Complexity</h2>
 
-        - 
+        - The space complexity is $O(1)$ since the size of the array (256 elements) is constant and independent of the input size.
     
     </details>
 
