@@ -470,37 +470,28 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - The goal is to find the first non-repeated character in a given string.
           
     2. <h2>Input</h2>
     
-        - 
+        - A string.
           
     2. <h2>Output</h2>
     
-        - 
+        - The first non-repeated character in the string. Returns null if there's no non-repeated character.
           
     4. <h2>Algorithm</h2>
     
-        1. 
+        1. Iterate through the string and count the occurrences of each character using a Dictionary.
+        2. Find the first character with a count of 1.
       
-                ```
-                Lets break it down:
-
-                
-                ```
-    
     5. <h2>Time Complexity</h2>
 
-          - 
-
+          - The time complexity is $O(N)$, where $N$ is the length of the string. This is because we iterate through the string once to count the occurrences and then iterate again to find the first non-repeated character.
+            
     6. <h2>Space Complexity</h2>
 
-        - 
-
-    7. <h2>Optimizations</h2>
-
-        - 
+        - The space complexity is $O(k)$, where $k$ is the number of unique characters in the string. The algorithm uses a Dictionary to store the counts of each character.
     
     </details>
 
