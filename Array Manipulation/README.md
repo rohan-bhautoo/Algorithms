@@ -323,3 +323,39 @@
     </details>
 
     Code: [BubbleSortAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/BubbleSortAlgorithm.cs)
+
+- Shuffling arrays.
+  <details><summary><b>Analysis</b></summary>
+    
+    1. <h2>Problem Statement</h2>
+    
+        - Given an array of integers, find and return the maximum/minimum element in the array.
+          
+    2. <h2>Input</h2>
+    
+        - 
+          
+    2. <h2>Output</h2>
+    
+        - 
+          
+    4. <h2>Algorithm</h2>
+    
+        1. 
+      
+            ```
+            Lets break it down:
+    
+            ```
+    
+    5. <h2>Time Complexity</h2>
+
+        - 
+
+    6. <h2>Space Complexity</h2>
+
+        - 
+    
+    </details>
+
+    Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/.cs)
