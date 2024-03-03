@@ -328,12 +328,12 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
 
     Code: [BubbleSortAlgorithm.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/BubbleSortAlgorithm.cs)
 
-  - Shuffling arrays.
+- Shuffling arrays.
   <details><summary><b>Analysis</b></summary>
     
     1. <h2>Problem Statement</h2>
     
-        - 
+        - Given an array of integers, find and return the maximum/minimum element in the array.
           
     2. <h2>Input</h2>
     
@@ -359,15 +359,11 @@ Algorithm exercises in interviews can cover a wide range of topics, and the comp
     6. <h2>Space Complexity</h2>
 
         - 
-
-    7. <h2>Optimizations</h2>
-
-        - 
     
     </details>
 
     Code: [.cs](https://github.com/rohan-bhautoo/Algorithms/blob/main/Array%20Manipulation/.cs)
-
+  
 ## String Manipulation:
 
 - Reverse a string or a sentence.
