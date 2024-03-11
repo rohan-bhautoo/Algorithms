@@ -15,7 +15,28 @@ public void log(int[] numbers)
 }
 ```
 
+### $O(N)$
+The code below iterates over the array and prints each item in the console. The size of the input matters. The cost of this algorithm grows linearly and in direct correlation to the size of the input ($N$).
+```c#
+public void log(int[] numbers)
+{
+  for(int i = 0; i < numbers.Length; i++)
+  {
+    Console.WriteLine(numbers[i]);
+  }
+}
+```
+
 ### $O(N^2)$
+```c#
+public void log(int[] numbers)
+{
+  for(int i = 0; i < numbers.Length; i++)
+  {
+    Console.WriteLine(numbers[i]);
+  }
+}
+```
 
 ### $O(log N)$
 
