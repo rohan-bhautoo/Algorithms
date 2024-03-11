@@ -46,6 +46,9 @@ public void log(int[] numbers)
 ```
 
 ### $O(log N)$
+An algorithm that runs at logarithmic time ($O(log N)$) is more efficient and scalable than linear ($O(N)$) or ($O(N^2)$) algorithms.
+
+For example, a linear search needs to iterate over each item of the array. In the worst case scenario, the item is at the last position of the array. However, binary search algorithm is much faster as it starts by looking at the middle item if it is greater or smaller than the searched value. This means that the array is narrowed down by half.
 
 ### $O(2^N)$
 
