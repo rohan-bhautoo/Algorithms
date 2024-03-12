@@ -20,3 +20,14 @@ int[] numbers = { 10, 20, 30 };
 
 ### Limitation
 Arrays are static which means that the size of the array is fixed and cannot be changed overtime.
+
+## Linked Lists
+
+
+## Stacks
+
+
+## Queues
+
+
+## Hash Tables
