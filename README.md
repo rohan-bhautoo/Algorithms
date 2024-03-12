@@ -53,6 +53,35 @@ For example, a linear search needs to iterate over each item of the array. In th
 ### $O(2^N)$
 Algorithms with exponential time, $O(2^N)$, are not scalable as the input size grows faster. Exponential growth is the opposite of logarithmic growth.
 
+### Space Complexity
+Space complexity refers to the total amount of memory space used by an algorithm, including the space of input values for execution.
+
+In the code below, the for loop is independent of the size of the input. Even if the input array has 10 or 1,000,000 items, the method will only allocate some memory for the loop variable. The space complexity is $O(1)$.
+
+```c#
+public void greet(String[] names)
+{
+  for(int i = 0; i < names.Length; i++)
+  {
+    Console.WriteLine("Hi " + names[i]);
+  }
+}
+```
+
+In the code below, the first and second string array will be of the same size. The more item in the input array, the more space the method will take. The space complexity is $O(N)$.
+
+```c#
+public void greet(String[] names)
+{
+  String[] copy = new String[names.Length];
+
+  for(int i = 0; i < names.Length; i++)
+  {
+    Console.WriteLine("Hi " + names[i]);
+  }
+}
+```
+
 ## Arrays
 
 ## Linked Lists
