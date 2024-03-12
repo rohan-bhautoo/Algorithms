@@ -81,13 +81,3 @@ public void greet(String[] names)
   }
 }
 ```
-
-## Arrays
-
-## Linked Lists
-
-## Stacks
-
-## Queues
-
-## Hash Tables
