@@ -3,6 +3,10 @@
 ## Arrays
 Arrays are used to store a list of items. Looking for item based on the index is super fast.
 
+```c#
+int[] numbers = { 10, 20, 30 };
+```
+
 - Lookup
   - Time complexity: $O(1)$
 - Insert
