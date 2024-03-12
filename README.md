@@ -51,6 +51,7 @@ An algorithm that runs at logarithmic time ($O(log N)$) is more efficient and sc
 For example, a linear search needs to iterate over each item of the array. In the worst case scenario, the item is at the last position of the array. However, binary search algorithm is much faster as it starts by looking at the middle item if it is greater or smaller than the searched value. This means that the array is narrowed down by half.
 
 ### $O(2^N)$
+Algorithms with exponential time, $O(2^N)$, are not scalable as the input size grows faster. Exponential growth is the opposite of logarithmic growth.
 
 ## Arrays
 
